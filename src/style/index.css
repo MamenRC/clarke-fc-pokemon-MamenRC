@@ -17,172 +17,104 @@ body {
 }
 
 .header-app {
-  position: fixed;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  top: 0;
-  left: 0;
-  height: 100px;
-  background-color: #F7D91E;
-  width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100px;
+	width: 100%;
+	background-color: #F7D91E;
 }
 
 .header-app .title-app {
-  color: #fff;
-  text-align: center;
-  font-family: 'Pokemon Solid';
-  font-size: 50px;
-  transform: rotate(-15deg);
+	font-family: 'Pokemon Solid';
+	font-size: 60px;
+	transform: rotate(-15deg);
+	text-align: center;
+	color: #fff;
 }
 
 .list-main {
-  display: flex;
-  flex-direction: column;
-  flex: 1;
-  min-height: 100vh;
-	min-width: 100vw;
-  margin-top: 90px;
-  padding: 40px 25px;
-  box-sizing: border-box;
-  background-color: #F5E373;
-  align-items: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	flex: 1;
+	padding: 40px 25px;
+	background-color: #F5E373;
+
 }
 
 .search {
-  display: flex;
-  margin-bottom: 40px;
-  width: 100%;
-  max-width: 1075px;
-  justify-content: center;
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	margin-bottom: 40px;
+	max-width: 800px;
+
 }
 
 .search .name {
-  width: 100%;
-  border-radius: 20px;
-  font-size: inherit;
-  outline: none;
-  padding: 10px;
-  box-sizing: border-box;
-  border: 2px solid #F7D91E;
-}
-
-@media all and (min-width: 560px) {
-	.input__search .input__name {
-    width: 100%;
-	}
+	border-radius: 15px;
+	font-size: inherit;
+	padding: 10px;
+	box-sizing: border-box;
+	border: 2px solid #F7D91E;
+	width: 100%;
 }
 
 .list-pokemon {
-  list-style-type: none;
-  display: grid;
-  max-width: 1075px;
-  grid-gap: 25px;
-  margin: 0 auto 50px;
+	display: grid;
+	grid-gap: 10px;
+	list-style-type: none;
+	padding-left: 0;
 }
 
-@media (min-width: 560px) and (max-width: 767px) {
+@media all and (min-width: 560px) {
 	.list-pokemon {
-    grid-template-columns: 1fr 1fr;
+		grid-template-columns: 1fr 1fr;
 	}
 }
 
 @media all and (min-width: 768px) {
 	.list-pokemon {
-      grid-template-columns: 1fr 1fr 1fr;
+		grid-template-columns: 1fr 1fr 1fr;
 	}
 }
 
-@media all and (min-width: 1125px) {
-  .list-pokemon {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+@media all and (min-width: 1060px) {
+	.list-pokemon {
+		grid-template-columns: 1fr 1fr 1fr 1fr;
 	}
 }
 
 .list-pokemon .list-pokemon--li {
-  background-color: #fff;
-  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.25);
-  border-radius: 10px;
+	background-color: #fff;
+	border-radius: 10px;
 	border: 2px solid #F7D91E;
-}
-
-.list-pokemon .list-pokemon--li .card {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 20px;
-  line-height: 25px;
-  width: 250px;
-  box-sizing: border-box;
-}
-
-.id {
-  align-self: flex-end;
-  font-size: 20px;
+	box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.25);
+	width: 200px;
 }
 
 .picture {
-  width: 120px;
+	width: 150px;
 }
 
 .name {
-  margin-bottom: 15px;
-  font-weight: bold;
-  font-size: 28px;
-  font-family: 'Ceviche One', cursive;
-  color: #2731FA;
-  letter-spacing: 1px;
+	color: #2731FA;
 }
 
 .type {
-  display: flex;
-  justify-content: space-around;
-  width: 100%;
+	display: flex;
+	justify-content: space-around;
+	width: 100%;
 }
 
 .type .box {
-  padding: 5px 10px;
-  color: #fff;
-  border-radius: 10px;
-}
-
-.type .box.box--poison {
-  background-color: #FA3127;
-	color: #000;
-}
-
-.type .box.box--grass {
-  background-color: #69DA53;
-	color: #000;
-}
-
-.type .box.box--electric {
-  background-color: #F7F708;
-  color: #000;
-}
-
-.type .box.box--water {
-  background-color: #2CC9AA;
-	color: #000;
-}
-
-.type .box.box--flying {
-  background-color: #C1B4F7;
-	color: #000;
-}
-
-.type .box.box--normal {
-  background-color: #F1C3F7;
-	color: #000;
-}
-
-.type .box.box--bug {
-  background-color: #DAEE8B;
-	color: #000;
-}
-
-.type .box.box--fire {
-  background-color: #FC9937;
-	color: #000;
+	border-radius: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 0;
+	padding-bottom: 0;
+	margin-bottom: 0.5em;
+	align-self: center;
+	border: 2px solid #F7D91E;
 }
