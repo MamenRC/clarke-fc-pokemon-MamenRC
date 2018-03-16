@@ -22,13 +22,11 @@ class App extends React.Component {
 			.then(json => {
 				const pokemons = json;
 				arrayPokemon.push(pokemons);
-				console.log('pokemons: ', pokemons);
 				this.setState({
 					arrayPokemon: arrayPokemon
 				});
 			});
 		};
-		console.log('arrayPokemon: ', arrayPokemon);
 	}
 
 	handleOnChange(e) {
