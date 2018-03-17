@@ -30,7 +30,6 @@ class App extends React.Component {
 					arrayPokemon: arrayPokemon
 				});
 			});
-
 			fetch(`https://pokeapi.co/api/v2/pokemon-species/${i}/`)
 				.then(response => response.json())
 				.then(json => {
@@ -44,6 +43,7 @@ class App extends React.Component {
 			};
 		console.log('arrayPokemon: ', arrayPokemon);
 		console.log('evolutionPokemon: ', evolutionPokemon);
+
 	}
 
 	//Recojo el valor del input
