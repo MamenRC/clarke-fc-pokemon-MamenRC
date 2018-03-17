@@ -10,8 +10,11 @@ class PokemonList extends React.Component{
 						<PokemonCard
 							namePokemon = {list.name}
 							idPokemon = {list.id}
-							picture = {list.sprites.front_default}
+							picture = {list.sprites.back_default}
 							attack = {list.types}
+							weight = {list.weight}
+							height = {list.height}
+							skills = {list.abilities}
 						/>
 					</li>)
 				}
