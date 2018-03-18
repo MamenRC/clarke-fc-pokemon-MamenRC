@@ -47,8 +47,8 @@ class App extends React.Component {
 	}
 
 	//Recojo el valor del input
-	handleOnChange(e) {
-		const valueToPokemon = e.target.value.toLowerCase();
+	handleOnChange(event) {
+		const valueToPokemon = event.target.value.toLowerCase();
 		this.setState({
 			valueInput: valueToPokemon
 		});
